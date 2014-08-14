@@ -1,7 +1,9 @@
 #!/usr/bin/python
 
 #this script pre-computes powers of 2 up to whatever you specify
-# in the range() statement, and writes it to a file as a C++ array
+# in the range() statement, and writes it to a file as a C++ array.
+#
+#Note that this assumes you are linking against the GNU GMP library
 
 #change desired filename here
 f = open('nzip-array.h', 'a')
