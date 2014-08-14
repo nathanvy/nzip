@@ -3,7 +3,8 @@
 #include <gmpxx.h>
 #include <stdint.h>
 
-//return 0 if x is a power of 2, else return the exponent to which you raise 2 to get near x
+//k fuck this, it's actually really really inefficient.
+// probably better to precompute values up to some maximum size
 mpz_class previousPowerOfTwo(mpz_class x) {
   mpz_class i;
   for(i=0; (2^i) <= x; i++) {
